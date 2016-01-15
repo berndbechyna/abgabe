@@ -1,0 +1,13 @@
+/*Buttons*/
+@import 'base/_variables.scss';
+@import 'base/_mixins.scss';
+
+.btn-primary{
+	@include add-background($primary-color);
+	@include add-border(2px, #fff, all);
+}
+
+.btn-primary:hover{
+	background: lighten($primary-color, 10%);
+	@include add-border(2px, #fff, all);
+}

@@ -1,0 +1,199 @@
+/*Sections */
+@import 'base/_variables.scss';
+@import 'base/_mixins.scss';
+
+section{
+	padding: 30px 0px; 
+}
+
+
+.section-showcase{
+	height: $showcase-height; 
+	background: url($showcase-image) no-repeat top center;
+
+	.showcase-content{
+		padding: 130px 15px;
+		text-align: center; 
+	}
+
+	h1{
+		color: $light-color; 
+		font-size: $h1-font-size;
+	}
+
+	p{
+		color: $light-color;
+	}
+}
+
+.section-showabout{
+	width: 100%;
+	height: $showabout-height; 
+	background: url($showabout-image) no-repeat top center;
+
+	.showcase-content{
+		padding: 90px 15px;
+		text-align: left; 
+	}
+
+	h2{
+		color: $primary-color; 
+		font-size: 35px;
+	}
+
+	blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 17.5px;
+    border-left: 3.9px solid $primary-color;
+}
+
+}
+
+.section-imagearea{
+	h2{
+		font-size: 45px; 
+		font-weight: 200;
+	}
+
+	span{
+		font-weight: 700; 
+	}
+
+	p{
+		font-size: 13px; 
+	}
+
+	.box-1{
+		padding-left: 150px;
+		top: 75px;
+	}
+	.box-2{
+		padding-left: 135px;
+		top: 75px;
+	}
+}
+
+.services{
+	h2{
+		font-size: 35px;
+		padding-top: 30px;
+		font-weight: 200;
+	}
+	span{
+		font-weight: 700;
+	}
+
+	h3{
+		font-size: 16px;
+		font-weight: 650;
+	}
+
+	p{
+		margin-bottom: 30px;
+	}
+
+	.fa{
+		padding: 0px 14px 12px 0px;
+	}
+}
+
+section.advert{
+	h1{
+		font-weight: 200;
+	}
+
+	span{
+		font-weight: 700;
+	}
+}
+
+
+.section-carousel-about{
+	padding: 0; 
+}
+
+section.philosophy{
+	.page-header{
+		font-weight: 600;
+		margin-top: 0px;
+		margin-bottom: 50px;
+		
+	}
+
+	h2{
+		margin-bottom: 0px;
+		font-weight: 200;
+	}
+	h3{
+	    margin-top: 0px;
+	    margin-bottom: 30px;
+		font-weight: 600;
+	}
+
+	.block-secondary{
+		padding: 50px 60px 50px 60px;
+	}
+}
+
+.team-section{
+	h3{
+		margin-bottom: 2px;
+		padding-bottom: 0px;
+	}
+
+	h4{
+		font-size: 15px;
+		padding-top: 0px;
+		margin-top: 0px;
+		padding-bottom: 15px;
+	}
+}
+
+section.section-main{
+	margin-top: 50px;
+}
+
+section.section-map{
+	margin-top: -30px;
+}
+
+footer.footer-main{
+	margin-bottom: -64px;
+}
+
+.services.section-primary{
+	.page-header{
+		font-size: 35px;
+		font-weight: 400;
+
+	}
+
+	h3{
+		padding-bottom: 15px;
+		font-size: 25px;
+	}
+}
+
+.section-primary{
+	@include background-opacity($primary-color, 0.8);
+	//@include add-background($primary-color);
+}
+.section-primary-a{
+	@extend .section-primary;
+	@include add-border(4px, $secondary-color, top);
+}
+.section-secondary{
+	@include add-background($secondary-color);
+}
+.section-light{
+	@include add-background($light-color);
+}
+
+.section-imagearea{
+	@include add-background($light-color);
+	padding: 0px; 
+}
+.section-dark{
+	@include add-background($dark-color);
+}

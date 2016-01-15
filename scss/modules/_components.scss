@@ -1,0 +1,27 @@
+@import 'base/_variables.scss';
+@import 'base/_mixins.scss';
+
+/*Carousel*/
+
+.carousel{
+	margin-bottom: 20px;
+}
+
+
+/*Tabs*/
+
+.tab-pane{
+	padding: 20px 10px; 
+	@include border-radius(5px);
+	margin-bottom: 20px; 
+}
+
+.tab-primary .tab-pane, .tab-primary .nav-tabs > li.active > a,.tab-primary .nav-tabs > li.active > a:hover,
+.tab-primary .nav-tabs > li.active > a:focus {
+	@include add-background($primary-color);
+}
+
+.tab-light .tab-pane, .tab-light .nav-tabs > li.active > a,.tab-light .nav-tabs > li.active > a:hover,
+.tab-light .nav-tabs > li.active > a:focus {
+	@include add-background($light-color);
+}

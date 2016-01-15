@@ -1,0 +1,57 @@
+/*Mobile Version*/
+
+@media(max-width: 900px){
+	.search{
+		display: inline-block;
+		text-align: center;
+	}
+
+	.device{ // für das spätere Bild
+		display: block;
+		margin: 20px auto 0 auto; 
+	}
+
+	.device-small{
+		margin-bottom: 20px !important;
+	}
+
+	.footer-main{
+		ul{
+			margin-bottom: 20px; 
+			text-align: center; 
+		}
+
+	    h4{
+		text-align: center;
+		}
+	}
+
+
+	.section-imagearea{
+		.box-1{
+			padding-bottom: 17%;
+			padding-left: 55px;
+		}
+
+		.box-2{
+			padding-left: 55px;
+		}
+
+	}
+
+	.section-showabout{
+		h2{
+		    color: #fff;
+		    font-size: 35px;
+		}
+		blockquote{
+		    padding: 0px 20px;
+		    border-left: 3.9px solid #fff;
+		}
+		em{
+			color: #fff;
+		}
+
+	}
+	
+}

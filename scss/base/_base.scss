@@ -1,0 +1,29 @@
+@import 'base/_variables.scss';
+@import 'base/_mixins.scss';
+
+body{
+	font-family: $base-font-family;
+	font-size: $base-font-size; 
+	line-height: 1.7em;  
+	color: $base-font-color;
+}
+
+a{
+	color: $primary-color; 
+}
+
+ul, li{
+	list-style: none; 
+}
+
+input, textarea, button{
+	@include border-radius(0px);
+}
+
+img.device{ // Spricht Bilder innerhalb der index Seite an
+	width: 100%; // Bilder können sich maximal ausbreiten, schrumpfen damit 
+} 
+img.device-small{
+	width: 100%;
+	margin-bottom: -34px; 
+}

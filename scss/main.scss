@@ -1,0 +1,25 @@
+/*Includen alle sekundären scss files in das Hauptscssfile -> main.scss*/
+
+/*IMPORT ALLER BASE-SCSS FILES*/
+
+@import 'base/_base.scss';
+@import 'base/_mixins.scss';
+@import 'base/_normalize.scss';
+@import 'base/_variables.scss';
+
+/*IMPORT ALLER MODULES-SCSS FILES -> für sitespezifische Komponenten z.b. navbar*/
+
+@import 'modules/_blocks.scss';
+@import 'modules/_buttons.scss';
+@import 'modules/_components.scss';
+@import 'modules/_sections.scss';
+@import 'modules/_typography.scss';
+@import 'modules/_forms.scss';
+
+/*IMPORT ALLER LAYOUT-SCSS FILES */
+
+@import 'layouts/_footer.scss';
+@import 'layouts/_header.scss';
+@import 'layouts/_nav.scss';
+@import 'layouts/_blog.scss';
+@import 'layouts/_mobile.scss';

@@ -1,0 +1,58 @@
+/*Mixins*/
+
+@import 'base/_variables.scss';
+
+@mixin border-radius($radius){
+	-moz-border-radius: $radius; 
+	-webkit-boder-radius: $radius; 
+	border-radius: $radius; 
+}
+
+@mixin add-border($size, $color, $position){
+	@if $position == 'all'{
+		border: $size solid $color; 
+	} @else if $position == 'top'{
+		border-top: $size solid $color;
+
+	} @else if $position == 'bottom'{
+		border-bottom: $size solid $color;
+
+	} @else if $position == 'right'{
+		border-right: $size solid $color;
+
+	} @else if $position == 'left'{
+		border-left: $size solid $color;
+
+	} @else if $position == 'right-left'{
+		border-right: $size solid $color;
+		border-left: $size solid $color;
+
+	}
+
+}
+
+@mixin background-opacity($color, $opacity) {
+  background: $color;
+  background: rgba($color, $opacity);
+}
+
+@mixin add-margin($top, $right, $bottom, $left){
+	margin-top: $top;
+	margin-right: $right;
+	margin-bottom: $bottom;
+	margin-left: $left;
+}
+
+
+@mixin add-background($color){
+	background: $color; 
+	@if $color == $light-color{ //je nachdem welche Hintergrundfarbe, ist auch die Schriftfarbe eine andere
+		color: #666666;
+	}@else if $color == $secondary-color{
+		color: #666666;
+	}@else if $color == $primary-color{
+		color: #fff;
+	}@else if $color == $dark-color{
+		color: #fff; 
+	}
+}
